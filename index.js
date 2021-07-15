@@ -1,5 +1,5 @@
 import {foo } from "./test"
-import React from "react";
+import React from "react"
 // var age=29;
 
 class Hello extends React.Component {
