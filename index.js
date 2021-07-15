@@ -1,11 +1,6 @@
-/* es6 code */
-import { name } from './test'
-import React from 'react'
-/* js code */
-
-// function hello() {
-// 	return 'name'
-// }
+import {foo } from "./test"
+import React from "react";
+// var age=29;
 
 class Hello extends React.Component {
 	render() {
@@ -13,3 +8,9 @@ class Hello extends React.Component {
 	}
 }
 export default Hello
+
+
+function sayHello() {
+    return foo
+}
+sayHello()
