@@ -1,17 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Card, CardBody } from 'reactstrap'
+
+import { Card, Typography, CardContent } from '@material-ui/core'
+import '../styles/styles.css'
 
 function Header({ name, title }) {
 	return (
-		<div>
-			<Card className='my-2 bg-warning' style={{ height: '80px' }}>
-				<CardBody>
-					<h1 className='text-center '>{name}</h1>
-					<p>{title}</p>
-				</CardBody>
-			</Card>
-		</div>
+		<Card class='Header'>
+			<CardContent>
+				<Typography variant='h4'>{name}</Typography>
+				<Typography component='p'>{title}</Typography>
+			</CardContent>
+		</Card>
 	)
 }
 export default Header

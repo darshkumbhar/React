@@ -1,12 +1,16 @@
 import React from 'react'
-import { Button, Jumbotron } from 'reactstrap'
+import '../styles/styles.css'
+
+import { Container, Typography } from '@material-ui/core'
 
 function About() {
 	return (
 		<div>
-			<Jumbotron>
-				<h1 style={{ textAlign: 'center' }}>I Am In About </h1>
-			</Jumbotron>
+			<Container>
+				<Typography variant='h4' class='Typography'>
+					I Am In About
+				</Typography>
+			</Container>
 		</div>
 	)
 }

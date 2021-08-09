@@ -1,24 +1,22 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
-import Header from '../component/Header'
 
+import { Container, Grid } from '@material-ui/core'
+import Header from '../component/Header'
 import Menus from '../component/Menus'
 
 function HomeView(props) {
 	return (
-		<div className='HomeView'>
-			<Container>
-				<Header name='React-Router-dom' />
-				<Row>
-					<Col md={4}>
-						<Menus />
-					</Col>
-					<Col md={8} style={{ backgroundColor: '#F5F5F5' }}>
-						{props.children}
-					</Col>
-				</Row>
-			</Container>
-		</div>
+		<Container>
+			<Header name='React-Router-dom' />
+			<Grid container>
+				<Grid xs={4}>
+					<Menus />
+				</Grid>
+				<Grid style={{ backgroundColor: '#f5f5f5' }} xs={8}>
+					{props.children}
+				</Grid>
+			</Grid>
+		</Container>
 	)
 }
 

@@ -1,0 +1,36 @@
+.Header {
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	background-color: orange;
+	margin-bottom: 5;
+}
+.Typography {
+	text-align: center;
+	text-decoration: underline;
+}
+.Container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 10px;
+	flex-direction: row;
+}
+.User-List {
+	margin: 2;
+	text-align: center;
+}
+.Update {
+	flex-direction: row;
+	display: flex;
+	/* margin-left: 100px; */
+	margin-bottom: 20px;
+	justify-content: space-evenly;
+}
+.Form {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	margin-left: 200px;
+	margin-bottom: 15px;
+}

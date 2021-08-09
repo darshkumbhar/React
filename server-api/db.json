@@ -1,0 +1,24 @@
+{
+  "albums": [
+    {
+      "id": "1",
+      "title": "java",
+      "author": "jee"
+    },
+    {
+      "id": "2",
+      "title": "cpp",
+      "author": "cpp"
+    },
+    {
+      "id": "3",
+      "title": "HTML",
+      "author": "PHP"
+    },
+    {
+      "id": "4",
+      "title": "CSS",
+      "author": "CSS"
+    }
+  ]
+}
