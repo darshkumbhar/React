@@ -1,27 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import App from './container/App'
 import reportWebVitals from './reportWebVitals'
 
-import { BrowserRouter as Router } from 'react-router-dom'
-
-import axios from 'axios'
-axios.interceptors.request.use(request => {
-	console.log(request)
-	request.headers.Channelname = 'helloooo'
-	return request
-})
-axios.interceptors.response.use(response => {
-	console.log(response)
-	return response
-})
 ReactDOM.render(
 	<React.StrictMode>
-		<Router>
-			<App />
-		</Router>
+		<App appTitle='Persons Manager' />
 	</React.StrictMode>,
 	document.getElementById('root')
 )
